@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="Alfa-Jóias, Rafael-azk, Jóias">
+  <meta name="description" content="Aplicação em construção para portfólio">
+  <meta name="author" content="Rafael Azk">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+  <!------------------Logo + Navegação----------------->
+  <link rel="icon" href="imagens/gem-solid.svg" />
+  <link rel="stylesheet" href="css/estilo.css" />
+
+  <title>Alfa-Jóias</title>
+</head>
+
+<body id="cores">
+  <header>
+    <div id="logo">
+      <h1 id="letras"><span id="alfa">Alfa</span><span id="j">-Jóias</span></h1>
+    </div>
+
+    <div class="container-fluid" id="barra">
+      <div class="row">
+        <div class="m-auto">
+          <nav class="navbar navbar-expand-sm navbar-dark">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target2">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-target2">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" id="ativo" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="">Contato</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Tema</a>
+                  <div class="dropdown-menu">
+                    <p href="" class="dropdown-item tema" onclick="tema('claro')">Claro</p>
+                    <p href="" class="dropdown-item tema" onclick="tema('escuro')">Escuro</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--------------------Carousel----------------------------------------------------->
+  <section>
+    <div id="controles2" class="carousel slide" data-ride="carousel" class="joias">
+      <ol class="carousel-indicators">
+        <li data-target="#controles2" data-slide-to="0" class="active"></li>
+        <li data-target="#controles2" data-slide-to="1"></li>
+        <li data-target="#controles2" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagens/j2.png" class="img" alt="Jóia1">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/j5.jpg" class="img" alt="Jóia2">
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/j4.jpg" class="img" alt="Jóia3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!----------------------Principal---------------------------------------------------->
+
+  <section>
+    <div class="container" id="block">
+      <div class="row">
+        <div class="col">
+          <div id="principal">
+            <h6 id="espaco">Conheça nosso espaço:</h6>
+            <iframe width="530" height="315" src="https://www.youtube.com/embed/_x-Z8dDrUHs" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen class="videoMapa"></iframe><br>
+            <h6 class="d-none d-md-block">Localização:</h6>
+            <a href="" class="d-md-none">Localização:</a>
+            <div class="d-none d-md-block">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1179705535997!2d-46.669220485022144!3d-23.564206184681538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d6a19b4ac7%3A0x3b4045573d5f43ef!2sCASA%20S%C3%83O%20PAULO%20JOIAS!5e0!3m2!1spt-BR!2sbr!4v1601528403201!5m2!1spt-BR!2sbr"
+                width="530" height="315" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0" class="videoMapa"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="galeria">
+            <h6>Galeria:</h6>
+            <a href="">
+              <img src="imagens/j1.jpeg" alt="" height="93" width="93" class="img2">
+            </a>
+            <a href="">
+              <img src="imagens/j3.jpg" alt="" height="93" width="93" class="img2">
+            </a>
+            <a href="">
+              <img src="imagens/j6.jpg" alt="" height="93" width="93" class="img2">
+            </a>
+            <a href="">
+              <img src="imagens/j7.jpg" alt="" height="93" width="93" class="img2">
+            </a>
+            <br>
+            <a href="" id="link">Veja Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-------------------Footer----------------------------------------------->
+  <footer>
+    <div id="foot">
+      <h6>&copy;Todos os left-Right-Center</h6>
+    </div>
+  </footer>
+
+  <!----------------------JS----------------------------------------------->
+
+  <script>
+    function tema(cor) {
+      if (cor === 'escuro') {
+        document.getElementById('cores').style.background = 'black'
+        document.getElementById('cores').style.color = 'white'
+      } else if (cor === 'claro') {
+        document.getElementById('cores').style.background = 'linear-gradient(to right, rgb(211, 211, 211), silver)'
+        document.getElementById('cores').style.color = 'black'
+      }
+    }
+  </script>
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
